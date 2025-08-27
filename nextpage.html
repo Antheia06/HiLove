@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello love!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CSSRulePlugin.min.js"></script>
+  <!-- Import Great Vibes font -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to bottom, #ffb6c1, #b6f4ff);
+
+
+
+    }
+.monthsary-msg {
+  position: fixed;
+  top: 20%; /* Adjust this to move it higher or lower */
+  left: 50%;
+  transform: translateX(-50%);
+font-family: 'Bebas Neue', cursive;
+font-weight: 400;
+
+  font-size: 45px;
+  color: #070707;
+  text-shadow: 5px 5px 5px rgb(255, 255, 255);
+  white-space: nowrap; /* prevents wrapping into multiple lines */
+  z-index: 2500;
+  pointer-events: none;
+}
+
+
+
+    .wrapper {
+      width: 320px;
+      height: 200px;
+      transform: translateY(80px);
+      position: relative;
+    }
+
+    .envelope {
+      width: 320px;
+      height: 200px;
+      background-color: #6ec1f3;
+      position: relative;
+      cursor: pointer;
+      z-index: -10;
+    }
+
+    .envelope::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-right: 160px solid #58aee8;
+      border-left: 160px solid #58aee8;
+      border-top: 100px solid transparent;
+      border-bottom: 100px solid #4a9bd4;
+      position: absolute;
+      z-index: 10;
+    }
+
+    .envelope::after {
+      content: "";
+      width: 320px;
+      height: 200px;
+      border-top: 0.2px solid lightgrey;
+      clip-path: polygon(0% 0%, 50% 60%, 100% 0%);
+      background-color: #6ec1f3;
+      position: absolute;
+      z-index: 15;
+      top: 0;
+      left: 0;
+    }
+
+    .letter {
+      position: absolute;
+      top: 0;
+      left: 0px;
+      background-color: #f8f1e7;
+      width: 320px;
+      height: 200px;
+      border-radius: 3px;
+      box-shadow: 0px 6px 18px rgba(255, 182, 193, 0.5);
+      z-index: 5;
+      padding: 25px;
+      display: block;
+      overflow: hidden;
+      color: #000000;
+      font-family: 'Great Vibes', cursive;
+      font-size: 26px;
+      line-height: 1.5;
+    }
+
+    .letter.open {
+      overflow-y: auto;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .letter .icon {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 18px;
+      cursor: pointer;
+      color: #000000;
+      z-index: 2000;
+    }
+
+    .shadow {
+      margin: 320px auto;
+      width: 200px;
+      height: 5px;
+      border-radius: 30%;
+      box-shadow: 15px 15px 15px #C2C1D2;
+      transform: translateX(-15px);
+    }
+
+    /* Floating Hearts */
+    .hearts-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 1500;
+    }
+    .heart {
+      position: absolute;
+      font-size: 20px;
+      color: pink;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+<div class="monthsary-msg">Happy Monthsary Lovee!</div>
+
+
+  <div class="wrapper">
+    <div class="envelope">
+      <div class="letter">
+        <span class="fin">
+          Hello love! <br><br>
+I just wanna say na kahit malayo tayo sa isa’t isa, nararamdaman ko yung effort, yung care, at yung presence mo.
+Hindi lahat kaya ng long distance, pero ikaw, pinili mo pa rin ako. Kaya thank you, and I will always choose us too, araw-araw. <br><br>
+
+Hindi pa man tayo nagkikita in person, I know one day mangyayari rin naman yun. At kapag dumating na yung araw na yun, babawi ako sa lahat ng hindi ko magawa ngayon. Yung mga dates, treats, at lahat ng activities na magkasama lang tayong dalawa. <br><br>
+
+For now, kahit ganito muna, always remember this. I’m proud of us, and I’m falling for you even more every single day. <br><br>
+
+Alam ko, hindi madali ang LDR. Pero I’m lucky kasi ikaw yung bebe ko. Alam mo ba? mas lalo kang gumaganda kapag naka-ngiti ka, I love it when you smile love, it makes my heart flutter. 🥰 I just hope na hindi tayo mapagod sa isa’t-isa, at sa situation natin ngayon. 😌<br><br>
+
+I know I’m not perfect, may flaws ako. And I’m sorry kung minsan nagdadalawang-isip pa ako kung dapat ko bang itanong or Ishare ang isang bagay, baka kasi wrong timing. Pero I’m willing to learn and fix this, if you’re open with me.
+
+Pero sigurado ako sa isang bagay, my intentions and feelings for you are genuine and true. I don’t ever plan to hurt you or leave you intentionally. That’s the last thing I’d ever want to do. <br><br>
+
+Someday, lovee, hindi na lang sa distance tayo magc-celebrate ng monthsary. Hoping you’d want that too. ❤️ <br><br>
+
+Cheers to us, lovee 🥂 Here’s to more months, more memories, and one day… finally closing the distance. ✨
+
+<br><br><br>
+Love,  Gen ❤
+        </span>
+        <i class="icon fa fa-times" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="shadow"></div>
+  </div>
+
+  <!-- Hearts container -->
+  <div class="hearts-container"></div>
+
+  <script>
+var flap = CSSRulePlugin.getRule(".envelope:after");
+var env = CSSRulePlugin.getRule(".envelope:before");
+
+const letterEl = document.querySelector(".letter");
+const shadowEl = document.querySelector(".shadow");
+const heartsContainer = document.querySelector(".hearts-container");
+
+let heartInterval;
+
+// Generate floating hearts
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerHTML = "&#10084;"; // ♥ symbol
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.bottom = "-30px"; // start below screen
+  heart.style.fontSize = (20 + Math.random() * 20) + "px"; 
+  heartsContainer.appendChild(heart);
+
+  gsap.to(heart, {
+    y: -(window.innerHeight + 200), // float upward across full screen
+    x: (Math.random() - 0.5) * 100, // gentle side sway
+    duration: 8 + Math.random() * 4, // slow floating
+    ease: "power1.out",
+    opacity: 0.9,
+    onComplete: () => heart.remove()
+  });
+}
+
+function startHearts() {
+  heartInterval = setInterval(createHeart, 800); // slower spawn
+}
+
+function stopHearts() {
+  clearInterval(heartInterval);
+}
+
+// OPEN animation
+function expandLetter() {
+  letterEl.classList.add("open");
+  gsap.set(letterEl, { 
+    position: "fixed", 
+    top: "50%", 
+    left: "50%", 
+    xPercent: -50, 
+    yPercent: -50 
+  }); 
+
+  gsap.to(letterEl, {
+    duration: 0.6,
+    width: Math.min(window.innerWidth * 0.65, 420),
+    height: Math.min(window.innerHeight * 0.55, letterEl.scrollHeight),
+    ease: "power2.out"
+  });
+  gsap.to(shadowEl, { duration: 0.6, width: 180 });
+
+  startHearts(); // start floating hearts when opened
+}
+
+// CLOSE animation
+function collapseLetter() {
+  letterEl.classList.remove("open");
+  gsap.to(letterEl, {
+    duration: 0.6,
+    width: 320,
+    height: 200,
+    xPercent: 0,
+    yPercent: 0,
+    top: 0,
+    left: 0,
+    position: "absolute",
+    ease: "power2.in"
+  });
+  gsap.to(shadowEl, { duration: 0.6, width: 200 });
+
+  stopHearts(); // stop hearts when closed
+}
+
+var timeline1 = gsap.timeline({ paused: true });
+var timeline2 = gsap.timeline({ paused: true });
+
+timeline1
+  .to(flap, {
+    duration: 0.6,
+    ease: "back.inOut",
+    cssRule: { transformOrigin: "top", rotateX: 180, zIndex: 0 }
+  })
+  .set(env, { cssRule: { zIndex: 0 } })
+  .add(expandLetter);
+
+timeline2
+  .add(collapseLetter)
+  .set(env, { cssRule: { zIndex: 10 } })
+  .set(flap, { cssRule: { zIndex: 15 } })
+  .to(flap, {
+    duration: 0.6,
+    cssRule: { transformOrigin: "top", rotateX: 0 },
+    ease: "back.in"
+  });
+
+document.querySelector(".envelope").addEventListener("click", function (e) {
+  e.stopPropagation();
+  timeline1.restart();
+});
+
+document.querySelector(".icon").addEventListener("click", function (e) {
+  e.stopPropagation();
+  timeline2.restart();
+});
+
+window.addEventListener("resize", () => {
+  if (letterEl.classList.contains("open")) {
+    expandLetter();
+  }
+});
+</script>
+
+
+</body>
+</html>
